@@ -7,4 +7,4 @@ Feature: Login
     Then ver la cuenta <validtexto>
     Examples:
       | usuario       | contrasena   | validtexto |
-      | standard_user | secret_sauce | PRODUCTS   |
+      | standard_user | secret_sauce | casa   |

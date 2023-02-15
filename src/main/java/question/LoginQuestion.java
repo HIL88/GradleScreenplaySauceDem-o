@@ -15,8 +15,10 @@ public class LoginQuestion implements Question<java.lang.String> {
     @Override
     public java.lang.String answeredBy(Actor actor) {
 
-       return BrowseTheWeb.as(actor).find(HomeUI.TEXT_VALID).getText();
+        return BrowseTheWeb.as(actor).find(HomeUI.TEXT_VALID).getText();
 
 
     }
 }
+
+

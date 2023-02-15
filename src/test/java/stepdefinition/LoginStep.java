@@ -33,7 +33,7 @@ public class LoginStep {
     @Then("^ver la cuenta (.+)$")
     public void ver_la_cuenta(String validtexto) {
 
-        System.out.println("*******"+LoginQuestion.value().answeredBy(theActorInTheSpotlight()));
+        //System.out.println("*******"+LoginQuestion.value().answeredBy(theActorInTheSpotlight()));
 
     }
 
