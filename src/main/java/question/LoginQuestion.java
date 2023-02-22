@@ -1,23 +1,31 @@
 package question;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.questions.Text;
 import ui.HomeUI;
-import net.serenitybdd.screenplay.questions.TextContent;
 
-public class LoginQuestion implements Question<java.lang.String> {
+public class LoginQuestion implements Question {
 
-    public static Question<String>value() {
-        return new LoginQuestion();
+    private final String validtexto;
+
+    public LoginQuestion(String validtexto) {
+        this.validtexto = validtexto;
     }
+    /*public static Question<String>value() {
+        return new LoginQuestion();
+    }*/
 
     @Override
-    public java.lang.String answeredBy(Actor actor) {
+    public Object answeredBy(Actor actor) {
 
-        return BrowseTheWeb.as(actor).find(HomeUI.TEXT_VALID).getText();
+        if(Text.of(HomeUI.TEXT_VALID).answeredBy(actor).contains(validtexto.toString()))
+        return true;
+        else
+            return false;
+    }
 
-
+    public static LoginQuestion loginvalidtext(String validtexto){
+        return new LoginQuestion(validtexto);
     }
 }
 
