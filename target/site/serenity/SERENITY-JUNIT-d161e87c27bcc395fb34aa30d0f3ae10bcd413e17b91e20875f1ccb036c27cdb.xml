@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Login" skipped="0" tests="2" time="6.79" timestamp="2023-02-15 05:30:34"><testcase name="Login"><failure message="Undefined default URL for page object PageObject" type="java.lang.AssertionError">Undefined default URL for page object PageObject</failure><system-err>Undefined default URL for page object PageObject&#13;
+stepdefinition.LoginStep.el_cliente_ingresa_a_la_website(LoginStep.java:31)&#13;
+✽.El cliente ingresa a la "pagina" website(file:///C:/Users/hilse/Documents/Cursos/BDG/IntelliJPruebasTesting/Prueba2-Gradle/src/test/resources/features/Login.feature:5)&#13;
+</system-err></testcase><testcase name="Agregar producto al carrito y despues eliminarlos"/></testsuite>
