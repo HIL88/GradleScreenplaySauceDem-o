@@ -1,8 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'net.serenity-bdd.aggregator'
 
-/*group 'org.example'
-version '1.0-SNAPSHOT'*/
 
 buildscript {
 
@@ -22,8 +20,8 @@ repositories{
 }
 
 ext{
-    serenityVersion = "3.6.12"
-    serenityCucumberVersion = "3.6.12"
+    serenityVersion = "3.6.20"
+    serenityCucumberVersion = "3.6.20"
     logbackVersion = '1.2.10'
 }
 
@@ -43,9 +41,9 @@ dependencies {
     implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.8.0'
-    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '3.6.12'
-    implementation group: 'net.serenity-bdd', name: 'serenity-reports', version: '3.6.12'
-    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '3.6.12'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '3.6.20'
+    implementation group: 'net.serenity-bdd', name: 'serenity-reports', version: '3.6.20'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '3.6.20'
     implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
 
 
